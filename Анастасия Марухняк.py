@@ -11,4 +11,3 @@ per = ''.join(reversed(pred))
 print("7.Развернутое предложение:" + str(per))
 print ("8.Исходная строка: " + pred)
 
-print ("тест")
