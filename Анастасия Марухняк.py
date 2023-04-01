@@ -11,3 +11,10 @@ per = ''.join(reversed(pred))
 print("7.Развернутое предложение:" + str(per))
 print ("8.Исходная строка: " + pred)
 
+
+
+print("6.Дублирование строки:" + str(pred)*3)
+print("6.Извлечение среза:" + str(pred[8:15]))
+per = ''.join(reversed(pred))
+print("7.Развернутое предложение:" + str(per))
+print ("8.Исходная строка: " + pred)
