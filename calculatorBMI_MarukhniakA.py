@@ -92,5 +92,5 @@ while True:
 
  if floor == "stop":
       break
- else:
-  print(floor.upper()) 
+
+
