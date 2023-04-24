@@ -82,7 +82,15 @@ dictionary = {
       ■  
          
       ■  
+         """,
+" ":
+    """
+         
+         
+         
+         
          """
+
 }
 
 while True:
@@ -101,16 +109,24 @@ while True:
     a_lin = a.splitlines()
     b_lin = b.splitlines()
     c_lin = c.splitlines()
+    c_p_lin = dictionary[" "].splitlines()
     d_lin = d.splitlines()
     e_lin = e.splitlines()
     f_lin = f.splitlines()
+    f_p_lin = dictionary[" "].splitlines()
     g_lin = g.splitlines()
     h_lin = h.splitlines()
 
     def watch():
-        for i in range(len(a_lin)):
-           print(a_lin[i], b_lin[i], c_lin[i], d_lin[i], e_lin[i], f_lin[i], g_lin[i], h_lin[i])
-       
+        if now.second % 2 == 0:
+            for i in range(len(a_lin)):
+                print(a_lin[i], b_lin[i], c_lin[i], d_lin[i], e_lin[i], f_lin[i], g_lin[i], h_lin[i])
+        else:
+            for i in range(len(a_lin)):
+                print(a_lin[i], b_lin[i], c_p_lin[i], d_lin[i], e_lin[i], f_p_lin[i], g_lin[i], h_lin[i])
+        print()    
+  
+  
     watch()             
     time.sleep(1)   
     clear()
